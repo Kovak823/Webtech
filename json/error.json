@@ -1,0 +1,6 @@
+{
+    "$schema": "./ip-api_error_draft-07.json",
+    "status": "fail",
+    "message": "invalid query",
+    "query": "error"
+}
