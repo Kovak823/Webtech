@@ -1,0 +1,41 @@
+directory, file {
+    display: block;
+    border: thin solid black;
+    box-shadow: 0.5em 0.5em 0.5em black;
+    font-family: monospace;
+}
+
+directory {
+    background-color: whitesmoke;
+}
+
+directory:root {
+    width: 50%;
+    margin: 1em auto;
+}
+
+file, directory > directory {
+    margin: 1em;
+}
+directory::before {
+    display: block;
+    content: attr(name);
+    background-color: cornflowerblue;
+    color: floralwhite;
+    padding: 0.5em;
+    border-bottom: thin solid black;
+    font-weight: bold;
+}
+
+file {
+    background-color: white;
+}
+
+file::before {
+    content: attr(name);
+}
+
+file::after {
+    content: attr(length) " bytes";
+    float: right ;
+}

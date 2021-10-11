@@ -1,0 +1,6 @@
+directory, file {
+    display: block;
+    border: thin solid black;
+    box-shadow: 0.5em 0.5em 0.5em black;
+    font-family: monospace;
+}
