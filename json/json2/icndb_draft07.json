@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Schema for the Internet Chuck Norris Darabase",
+    "type":"object",
+    "definitions": {},
+    "properties": {
+        "type":{
+            "type":"string"
+        }
+    },
+    "required": ["type","value"],
+    "if": {
+        "type":"object",
+        "properties": {
+            "type":{
+                "const":"success"
+            }
+        }
+    },
+    "else": {
+        "type":"object",
+        "properties": {
+            "value":{
+                "type":"string"
+            }
+        }
+    }
+}

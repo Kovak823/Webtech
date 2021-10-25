@@ -1,0 +1,10 @@
+{
+    "type": "success",
+    "value": {
+        "id": 555,
+        "joke": "Chuck Norris doesn't have pubic hairs because hair doesn't grow on balls of steal.",
+        "categories": [
+            "explicit"
+        ]
+    }
+}

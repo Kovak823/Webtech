@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Schema for the Internet Chuck Norris Darabase",
+    "type":"object",
+    "definitions": {
+        "categories":{
+            "title": "The array of joke categories",
+            "type":"array",
+            "items": {
+                "type":"string"
+            },
+            "uniqueItems": true
+        },
+        "joke":{
+            "title": "A joke",
+            "type":"object",
+            "properties": {
+                "id":{
+                    "type":"integer",
+                    "minimum": 1
+                },
+                "joke":{
+                    "type":"string"
+                },
+                "categories":{
+                    "$ref": "#/definitions/categories"
+                }
+            },
+            "required": ["id","joke","categories"]
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    },
+    "properties": {
+        "type":{
+            "type":"string"
+        }
+    },
+    "required": ["type","value"],
+    "if": {
+        "type":"object",
+        "properties": {
+            "type":{
+                "const":"success"
+            }
+        }
+    },
+    "then": {
+        "type":"object",
+        "properties": {
+            "value":{
+                "oneOf": [
+                    {
+                        "title": "Number of Jokes",
+                        "type":"integer",
+                        "minimum": 0
+                    },
+                    {
+                        "$ref": "#/definitions/categories"
+                    },
+                    {
+                        "$ref": "#/definitions/joke"
+                    },
+                    {
+                        "title": "An array of joke",
+                        "type":"array",
+                        "items": {
+                            "$ref": "#/definitions/jokes"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "else": {
+        "type":"object",
+        "properties": {
+            "value":{
+                "type":"string"
+            }
+        }
+    }
+}
