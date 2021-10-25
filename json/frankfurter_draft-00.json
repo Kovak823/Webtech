@@ -20,10 +20,8 @@
                     "type": "number"
                 }
             },
-            "minProperties": 1,
-            "additionalProperties": false
+            "minProperties": 1    
         }
     },
-    "required": ["amount", "base", "date", "rates"],
-    "additionalProperties": false
+    "required": ["amount", "base", "date", "rates"]
 }

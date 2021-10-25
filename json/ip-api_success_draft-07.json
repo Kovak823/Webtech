@@ -15,7 +15,7 @@
         "country":{
             "type":"string"
         },
-        "countrCode":{
+        "countryCode":{
             "type":"string",
             "$ref": "#/definitions/twoLetterCode"
         }
