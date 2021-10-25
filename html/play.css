@@ -1,0 +1,69 @@
+div.speaker{
+    font-weight: bold;
+    text-transform:uppercase ;
+}
+.stagedir{
+    color: gray;
+    font-style: italic;
+}
+
+.stagedir::before{
+    content: "(";
+}
+
+.stagedir::after{
+    content: ")";
+}
+
+section.scene > div.stagedir {
+    text-align: center;
+}
+
+div.line:hover, div.stagedir:hover{
+    background-color: salmon;
+    color: white;
+}
+
+section.scene {
+    counter-reset: line-number;
+}
+
+div.line::after{
+    content: counter(line-number);
+    counter-increment: line-number;
+}
+
+section.scene > div:nth-last-of-type(odd){
+    background-color: aliceblue;
+    border-top: blue;
+}
+
+div.speech, section.scene > div.stagedir{
+    padding: 1em;
+}
+
+section.scene > h1 {
+    border: thin solid red;
+}
+
+h1{
+    text-align: center;
+}
+
+p.author{
+    text-align: center;
+    font-size: large;
+}
+
+header{
+    font-variant: small-caps;
+}
+
+section.scene > h1{
+    border: thin solid red;
+    padding: 1em;
+}
+
+body{
+    
+}

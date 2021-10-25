@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+}
+body{
+    background-color: cornflowerblue;
+    margin: 0;
+}
+div.box{
+    width: 25%;
+    height: 25%;
+    position: absolute;
+}
+#b1{
+    background-color: limegreen;
+}
+#b2{
+    background-color: coral;
+    top: 50%;
+    left: 50%;
+}
+#b3{
+    background-color: gold;
+    top: 25%;
+    left: 25%;
+}
+#b4{
+    background-color: plum;
+    top: 75%;
+    left: 75%;
+}
