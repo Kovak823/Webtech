@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+div.column{
+    width: 25%;
+    height: 100vh;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100vh;
+}
+#c1{
+    background-color: limegreen;
+}
+#c2{
+    background-color: coral;
+}
+#c3{
+    background-color: gold;
+}
+#c4{
+    background-color: plum;
+}

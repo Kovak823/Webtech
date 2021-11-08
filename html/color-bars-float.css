@@ -1,0 +1,7 @@
+ @import "color-bars-float.css";
+
+div.column{
+    width: 25%;
+    height: 100vh;
+    float: left;
+}

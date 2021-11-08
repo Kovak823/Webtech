@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Relative Positioning</title>
+    <style>
+        #container {
+            background-color: lightgray;
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        div.box {
+            background-color: coral;
+            font-size: x-large;
+            width: 100px;
+            height: 100px;
+        }
+        #b2 {
+            background-color: gold;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        #b4 {
+            background-color: limegreen;
+            position: relative;
+            bottom: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="b1" class="box">1</div>
+        <div id="b2" class="box">2</div>
+        <div id="b3" class="box">3</div>
+        <div id="b4" class="box">4</div>
+        <div id="b5" class="box">5</div>
+    </div>
+
+</body></html>
