@@ -1,0 +1,30 @@
+@import "cards.css";
+
+div.card{
+    float: left;
+    position: relative;
+}
+
+span.topLeft, span.center, span.bottomRight{
+    position: absolute;
+}
+
+span.bottomRight {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+span.center {
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+div.card span.topLeft, div.card span.bottomRight{
+    font-size: 200%;
+}
+
+div.card span{
+    padding: 0.1em;
+}

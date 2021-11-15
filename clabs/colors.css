@@ -1,0 +1,13 @@
+body{
+    margin: 0%;
+}
+div.columns{
+    height: 100vh;
+    display: flex;
+}
+div.columns > div{
+    
+}
+div.columns::before{
+    content: attr(id);
+}

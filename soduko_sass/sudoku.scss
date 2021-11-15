@@ -1,0 +1,24 @@
+table.sudoku{
+    border-collapse: collapse;
+    margin: 1em auto 1em auto;
+    border: medium solid black;
+    tr:nth-child(3n){
+        border-bottom: medium solid black;
+    }
+    td:nth-child(3n){
+        border-right: medium solid black;
+    }
+    td{
+        width: 2em;
+        height: 2em;
+        vertical-align: middle;
+        text-align: center;
+        border: thin solid lightgray;
+    }
+    @for $i from 1 through 9{
+        tr:nth-child(#{$i}) > td:nth-child(#{$i}),
+        tr:nth-child(#{$i}) > td:nth-child(#{10-$i}){
+            background-color: gold;
+        }
+    }
+}

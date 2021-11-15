@@ -1,0 +1,20 @@
+@import "cards.css";
+
+div.cards{
+    display: flex;
+}
+
+div.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.card span.topLeft{
+    align-self: flex-start;
+}
+
+div.card span.bottomRight{
+    align-self: flex-end;
+    transform: rotate(180deg);
+}

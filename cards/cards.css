@@ -1,0 +1,42 @@
+body {
+    background-color: green;
+}
+
+div.card {
+    background-color: white;
+    width: 2.5in;
+    height: 3.5in;
+    margin: 1em;
+    border: medium solid black;
+    border-radius: 0.5em;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+div.card[data-suite=spades] span.suite::before{
+    content: "\2660";
+}
+div.card[data-suite=hearts] span.suite::before{
+    content: "\2665";
+}
+div.card[data-suite=clubs] span.suite::before{
+    content: "\2663";
+}
+div.card[data-suite=diamonds] span.suite::before{
+    content: "\2666";
+}
+div.card[data-suite=hearts], div.card[data-suite=diamonds]{
+    color: red;
+}
+div.card[data-suite=hearts], div.card[data-suite=spades]{
+    color: black;
+}
+div.card[data-rank=A] span.rank::before{
+    content: "A";
+}
+div.card span.center{
+    font-size: 300%;
+}
+div.card span.topLeft, div.card span.bottomRight{
+    font-size: 150%;
+}
