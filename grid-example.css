@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+div#grid{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr; /*25% 50% 25%*/
+    grid-template-columns: repeat(4, 1fr);
+}
+
+div#grid > div::before{
+    content: attr(id);
+}
+
+div#grid > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pink{
+    background-color: pink;
+    grid-row: 1 / span 3;
+    grid-column: 1;
+}
+
+#limegreen{
+    background-color: limegreen;
+    grid-row: 1;
+    grid-column: 2 / span 2;
+}
+
+#lavender{
+    background-color: lavender;
+    grid-row: 1 / span 3;
+    grid-column: 4;
+}
+
+#plum{
+    background-color: plum;
+}
+
+#coral{
+    background-color: coral;
+}
+
+#gold{
+    background-color: gold;
+    grid-row: 3;
+    grid-column: 2 / span 2;
+}
